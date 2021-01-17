@@ -1,0 +1,25 @@
+.logo {
+  color: $accent-color;
+  @include font(700, 24px, 1.17, 0.03em, raleway);
+
+  @media screen and (min-width: $desktop) {
+    @include font(700, 26px, 1.19, 0.03em, raleway);
+  }
+  // font-family: raleway, sans-serif;
+  // font-weight: 700;
+  // font-size: 26px;
+  // line-height: 1.19;
+
+  &.footer {
+    display: block;
+    margin-bottom: 20px;
+  }
+}
+
+.primary-logo {
+  color: #000000;
+}
+
+.secondary-logo {
+  color: $white-color;
+}

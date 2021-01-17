@@ -1,0 +1,38 @@
+.list.filter {
+  @extend %list;
+  @include centeredflex();
+  margin-bottom: 50px;
+}
+
+.list.filter > li:not(:last-child) {
+  margin-right: 8px;
+}
+
+.filter-button {
+  padding: 6px 22px;
+  text-align: center;
+
+  font-family: roboto, sans-serif;
+  color: $title-text-color;
+  @include font(500, 16px, 1.62);
+  // font-weight: 500;
+  // font-size: 16px;
+  // line-height: 1.62;
+  // letter-spacing: 0.03em;
+
+  background-color: $primary-background-color;
+  border-radius: 4px;
+  border-style: none;
+  cursor: pointer;
+  transition: all $timing-function;
+
+  &:hover,
+  &:focus {
+    color: $white-color;
+
+    background-color: $accent-color;
+
+    box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
+      0px 2px 2px rgba(0, 0, 0, 0.12);
+  }
+}
