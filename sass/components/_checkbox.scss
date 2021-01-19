@@ -2,13 +2,18 @@
   display: inline-flex;
   margin-bottom: 30px;
 
-  font-size: 14px;
+  font-size: 12px;
+  letter-spacing: 0.025em;
 
   &-link {
     display: inline;
     text-decoration: underline;
     margin-left: 4px;
     color: $accent-color;
+  }
+
+  @media screen and (min-width: $desktop) {
+    font-size: 14px;
   }
 }
 
@@ -26,6 +31,7 @@
 .label {
   position: relative;
   display: inline-flex;
+  align-items: center;
 }
 
 .check-icon {

@@ -5,20 +5,62 @@ footer {
   background-color: $secondary-background-color;
 }
 
-.container.footer {
+.footer-info {
   display: flex;
   flex-direction: column;
   align-items: center;
+
+  @media screen and (min-width: $desktop) {
+    flex-direction: row;
+  }
+}
+
+.footer-socials {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  @media screen and (min-width: $tablet) {
+    display: flex;
+    flex-direction: row;
+  }
+
+  @media screen and (min-width: $desktop) {
+  }
 }
 
 .container-footer {
   display: inline-block;
-  // margin-right: 70px;
+  text-align: center;
+  margin-bottom: 60px;
 
-  // &.subscribe {
-  //   margin-left: auto;
-  //   margin-right: 0px;
-  // }
+  &:not(:last-child) {
+    @media screen and (min-width: $tablet) {
+      margin-right: 165px;
+    }
+
+    @media screen and (min-width: $desktop) {
+      margin-right: 70px;
+    }
+  }
+  @media screen and (min-width: $desktop) {
+    margin-bottom: 0px;
+    text-align: start;
+  }
+}
+
+.footer-subscribe {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 0px;
+  width: 100%;
+
+  @media screen and (min-width: $desktop) {
+    margin-left: auto;
+    align-items: flex-start;
+    width: 570px;
+  }
 }
 
 li .address {
@@ -56,15 +98,11 @@ li .primary {
   }
 }
 
-.container-footer > p {
+.footer-call {
   margin-bottom: 20px;
 
   text-transform: uppercase;
   @include font(700);
-  // font-size: 14px;
-  // line-height: 1.14;
-  // font-weight: 700;
-  // letter-spacing: 0.03em;
 
   color: $white-color;
 }

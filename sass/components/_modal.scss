@@ -21,8 +21,8 @@
   top: 50%;
   left: 50%;
 
-  width: 528px;
-  height: 581px;
+  width: 450px;
+  height: 609px;
   padding: 40px;
 
   background: $white-color;
@@ -36,6 +36,11 @@
 
   .backdrop.is-hidden & {
     transform: translate(-50%, -50%) scale(1.1);
+  }
+
+  @media screen and (min-width: $desktop) {
+    width: 528px;
+    height: 581px;
   }
 }
 
