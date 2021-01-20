@@ -1,4 +1,6 @@
 .section-doing {
+  padding-top: 0px;
+
   @media screen and (max-width: $desktop - 1px) {
     display: none;
   }

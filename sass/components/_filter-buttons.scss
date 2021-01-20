@@ -3,10 +3,15 @@
   display: flex;
   align-items: center;
   flex-wrap: wrap;
-  margin-bottom: 50px;
+  margin-bottom: 40px;
 
   @media screen and (min-width: $tablet) {
     @include centeredflex;
+    margin-bottom: 15px;
+  }
+
+  @media screen and (min-width: $desktop) {
+    margin-bottom: 35px;
   }
 }
 
@@ -22,10 +27,6 @@
   font-family: roboto, sans-serif;
   color: $title-text-color;
   @include font(500, 16px, 1.62);
-  // font-weight: 500;
-  // font-size: 16px;
-  // line-height: 1.62;
-  // letter-spacing: 0.03em;
 
   background-color: $primary-background-color;
   border-radius: 4px;
